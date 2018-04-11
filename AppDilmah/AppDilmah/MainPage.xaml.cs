@@ -16,9 +16,10 @@ namespace AppDilmah
 
         public void Clicktonext(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new JasonDetailPage(),true);
+            // Navigation.PushAsync(new JasonDetailPage(),true);
+            Navigation.PushAsync(new Dashboard(), true);
 
-           // DisplayAlert("Clicked", "Yes", "OK");
+            // DisplayAlert("Clicked", "Yes", "OK");
         }
     }
 }

@@ -23,7 +23,7 @@
                     <ColumnDefinition Width="150"/>
                     <ColumnDefinition Width="650"/>
                 </Grid.ColumnDefinitions>                
-                <Image x:Name="Image" HorizontalOptions="FillAndExpand" Source="foodOrder.jpg" HeightRequest="400" WidthRequest="400" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="2" Opacity="1"/>
+                <Image x:Name="Image" HorizontalOptions="FillAndExpand" Source="foodOrderOne.jpg" HeightRequest="400" WidthRequest="400" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="2" Opacity="1"/>
                 <Label x:Name="Name" Text="Name" VerticalOptions="End" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" TextColor="Orange" FontAttributes="Bold" FontSize="32" FontFamily="Lobster-Regular" BackgroundColor="#321414" Opacity="0.5" HeightRequest="100" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
                 <Label Text="Description:" HorizontalOptions="StartAndExpand" Grid.Row="2" Grid.Column="0" Margin="20" FontAttributes="Bold" TextColor="Gray" FontSize="Medium" HorizontalTextAlignment="Center"/>
                 <Label x:Name="Description" Text="Description" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Grid.Row="2" Grid.Column="1" TextColor="Orange" FontSize="Medium" FontAttributes="Bold"/>
