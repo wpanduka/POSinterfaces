@@ -2,41 +2,55 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppDilmah.Dashboard">
-    
-     <Grid x:Name="GridDetails" RowSpacing="0.5" ColumnSpacing="0.5" >
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ClearButtonStyle" TargetType="Button">
+                <Setter Property="FontSize" Value="42" />
+                <Setter Property="FontFamily" Value="ubuntu" />
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid x:Name="GridDetails" RowSpacing="0.5" ColumnSpacing="0.5" >
           <Grid.RowDefinitions>
                  <RowDefinition Height="*"/>
                  <RowDefinition Height="*"/>
                  <RowDefinition Height="*"/>
           </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+          <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+          </Grid.ColumnDefinitions>
 
             <Image Source="foodOrder.jpg" Grid.Column="0" Grid.Row="0"/>
             <BoxView Grid.Column="0" Grid.Row="0" Color="Black" Opacity="0.6"/>
-            <Button Grid.Column="0" Grid.Row="0" TextColor="White"  Text="START ORDER" Clicked="test_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
+            <Button Grid.Column="0" Grid.Row="0" Text="START ORDER" Clicked="test_Clicked"  Style="{StaticResource ClearButtonStyle}"/>
 
             <Image Source="searchf.jpg" Grid.Column="1" Grid.Row="0"/>
             <BoxView Grid.Column="1" Grid.Row="0" Color="Black" Opacity="0.6"/>
-            <Button Grid.Column="1" Grid.Row="0" TextColor="White"  Text="SEARCH FOOD" Clicked="onlinetab_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>              
+            <Button Grid.Column="1" Grid.Row="0" Text="SEARCH FOOD" Clicked="onlinetab_Clicked"  Style="{StaticResource ClearButtonStyle}"/>              
 
             <Image Source="Loginp.jpg" Grid.Column="0" Grid.Row="1"/>
             <BoxView Grid.Column="0" Grid.Row="1" Color="Black" Opacity="0.6"/>
-            <Button Grid.Column="0" Grid.Row="1" TextColor="White"  Text="LOGIN PAGE" Clicked="table_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
+            <Button Grid.Column="0" Grid.Row="1" Text="LOGIN PAGE" Clicked="table_Clicked"  Style="{StaticResource ClearButtonStyle}"/>
 
             <Image Source="teaAbout.jpeg" Grid.Column="1" Grid.Row="1"/>
             <BoxView Grid.Column="1" Grid.Row="1" Color="Black" Opacity="0.6"/>
-            <Button Grid.Column="1" Grid.Row="1" TextColor="White"  Text="ABOUT US" Clicked="onbar_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>         
+            <Button Grid.Column="1" Grid.Row="1" Text="ABOUT US" Clicked="onbar_Clicked"  Style="{StaticResource ClearButtonStyle}"/>         
            
             <Image Source="Locationp.jpeg" Grid.Column="0" Grid.Row="2"/>
             <BoxView Grid.Column="0" Grid.Row="2" Color="Black" Opacity="0.6"/>
-            <Button Grid.Column="0" Grid.Row="2" TextColor="White"  Text="LOCATIONS" Clicked="Vedio_btn_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
+            <Button Grid.Column="0" Grid.Row="2" Text="LOCATIONS" Clicked="Vedio_btn_Clicked"  Style="{StaticResource ClearButtonStyle}"/>
                               
             <Image Source="Exitap.jpeg" Grid.Column="1" Grid.Row="2"/>
             <BoxView Grid.Column="1" Grid.Row="2" Color="Black" Opacity="0.6"/>
-            <Button Grid.Column="1" Grid.Row="2" TextColor="White"  Text="EXIT" Clicked="Exit_btn_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
+            <Button Grid.Column="1" Grid.Row="2" Text="EXIT" Clicked="Exit_btn_Clicked"  Style="{StaticResource ClearButtonStyle}"/>
       </Grid>
        
 </ContentPage>
