@@ -3,34 +3,30 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppDilmah.Dashboard">
     
-   
-            <Grid x:Name="GridDetails" RowSpacing="0.5" ColumnSpacing="0.5" >
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
+     <Grid x:Name="GridDetails" RowSpacing="0.5" ColumnSpacing="0.5" >
+          <Grid.RowDefinitions>
+                 <RowDefinition Height="*"/>
+                 <RowDefinition Height="*"/>
+                 <RowDefinition Height="*"/>
+          </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
+            <Image Source="foodOrder.jpg" Grid.Column="0" Grid.Row="0"/>
+            <BoxView Grid.Column="0" Grid.Row="0" Color="Black" Opacity="0.6"/>
+            <Button Grid.Column="0" Grid.Row="0" TextColor="White"  Text="START ORDER" Clicked="test_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
 
-                <Image Source="foodOrder.jpg" Grid.Column="0" Grid.Row="0"/>
-                <BoxView Grid.Column="0" Grid.Row="0" Color="Black" Opacity="0.6"/>
-                <Button Grid.Column="0" Grid.Row="0" TextColor="White"  Text="START ORDER" Clicked="test_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
+            <Image Source="searchf.jpg" Grid.Column="1" Grid.Row="0"/>
+            <BoxView Grid.Column="1" Grid.Row="0" Color="Black" Opacity="0.6"/>
+            <Button Grid.Column="1" Grid.Row="0" TextColor="White"  Text="SEARCH FOOD" Clicked="onlinetab_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>              
 
-                <Image Source="searchf.jpg" Grid.Column="1" Grid.Row="0"/>
-               <BoxView Grid.Column="1" Grid.Row="0" Color="Black" Opacity="0.6"/>
-                <Button Grid.Column="1" Grid.Row="0" TextColor="White"  Text="SEARCH FOOD" Clicked="onlinetab_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
-              
+            <Image Source="Loginp.jpg" Grid.Column="0" Grid.Row="1"/>
+            <BoxView Grid.Column="0" Grid.Row="1" Color="Black" Opacity="0.6"/>
+            <Button Grid.Column="0" Grid.Row="1" TextColor="White"  Text="LOGIN PAGE" Clicked="table_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
 
-              <Image Source="Loginp.jpg" Grid.Column="0" Grid.Row="1"/>
-              <BoxView Grid.Column="0" Grid.Row="1" Color="Black" Opacity="0.6"/>
-              <Button Grid.Column="0" Grid.Row="1" TextColor="White"  Text="LOGIN PAGE" Clicked="table_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
-
-
-             <Image Source="teaAbout.jpeg" Grid.Column="1" Grid.Row="1"/>
+            <Image Source="teaAbout.jpeg" Grid.Column="1" Grid.Row="1"/>
             <BoxView Grid.Column="1" Grid.Row="1" Color="Black" Opacity="0.6"/>
             <Button Grid.Column="1" Grid.Row="1" TextColor="White"  Text="ABOUT US" Clicked="onbar_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>         
            
@@ -41,7 +37,6 @@
             <Image Source="Exitap.jpeg" Grid.Column="1" Grid.Row="2"/>
             <BoxView Grid.Column="1" Grid.Row="2" Color="Black" Opacity="0.6"/>
             <Button Grid.Column="1" Grid.Row="2" TextColor="White"  Text="EXIT" Clicked="Exit_btn_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
-    
-            </Grid>
+      </Grid>
        
 </ContentPage>
