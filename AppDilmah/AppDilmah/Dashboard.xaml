@@ -6,81 +6,42 @@
    
             <Grid x:Name="GridDetails" RowSpacing="0.5" ColumnSpacing="0.5" >
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="400"/>
-                    <RowDefinition Height="400"/>
-                    <RowDefinition Height="400"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="400"/>
-                    <ColumnDefinition Width="400"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
 
                 <Image Source="foodOrder.jpg" Grid.Column="0" Grid.Row="0"/>
-                <BoxView Grid.Column="0" Grid.Row="0" Color="Black" Opacity="0.4"/>
+                <BoxView Grid.Column="0" Grid.Row="0" Color="Black" Opacity="0.6"/>
                 <Button Grid.Column="0" Grid.Row="0" TextColor="White"  Text="START ORDER" Clicked="test_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
 
-                <!--<Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,0,0" Source="foodOrder.jpg" Grid.Column="0" Grid.Row="0"/>-->
-                <!--<Grid AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,0,0" BackgroundColor="#000000" Opacity="0.5" >-->
-                    <!--<Label Text="hello" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" FontAttributes="Bold"/>-->
-
-                    <!--<Button Text="START ORDER" Clicked="test_Clicked"  HorizontalOptions="Center" VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" TextColor="White" FontAttributes="Bold" BackgroundColor="Transparent" Opacity="1" IsEnabled="True"/>-->
-
-               <!-- </Grid>-->
                 <Image Source="searchf.jpg" Grid.Column="1" Grid.Row="0"/>
-               <BoxView Grid.Column="1" Grid.Row="0" Color="Black" Opacity="0.4"/>
+               <BoxView Grid.Column="1" Grid.Row="0" Color="Black" Opacity="0.6"/>
                 <Button Grid.Column="1" Grid.Row="0" TextColor="White"  Text="SEARCH FOOD" Clicked="onlinetab_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
-
-
-
-                <!--<Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" Source="searchf.jpg" Grid.Row="0" Grid.Column="1"/>
-                <Grid AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="#000000" Opacity="0.5" Grid.Row="0" Grid.Column="1" >
-                    <Button Text="SEARCH FOOD" Clicked="onlinetab_Clicked" HorizontalOptions="Center" VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" TextColor="White" FontAttributes="Bold" BackgroundColor="Transparent" Opacity="1"/>
-                </Grid>-->
-
+              
 
               <Image Source="Loginp.jpg" Grid.Column="0" Grid.Row="1"/>
-             <BoxView Grid.Column="0" Grid.Row="1" Color="Black" Opacity="0.4"/>
-             <Button Grid.Column="0" Grid.Row="1" TextColor="White"  Text="LOGIN PAGE" Clicked="table_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
+              <BoxView Grid.Column="0" Grid.Row="1" Color="Black" Opacity="0.6"/>
+              <Button Grid.Column="0" Grid.Row="1" TextColor="White"  Text="LOGIN PAGE" Clicked="table_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
 
 
-              <!--  <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" Source="Loginp.jpg" Grid.Row="1" Grid.Column="0"/>
-                <Grid AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="#000000" Opacity="0.5" Grid.Row="1" Grid.Column="0" >
-                    <Button Text="LOGIN PAGE" Clicked="table_Clicked" HorizontalOptions="Center" VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" TextColor="White" FontAttributes="Bold" BackgroundColor="Transparent" Opacity="1"/>
-                </Grid>-->
-
-
-
-        <Image Source="teaAbout.jpeg" Grid.Column="1" Grid.Row="1"/>
-        <BoxView Grid.Column="1" Grid.Row="1" Color="Black" Opacity="0.4"/>
-        <Button Grid.Column="1" Grid.Row="1" TextColor="White"  Text="ABOUT US" Clicked="onbar_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
-                
-                
-
-       <!-- <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" Source="teaAbout.jpeg" Grid.Row="1" Grid.Column="1"/>
-                <Grid AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="#000000" Opacity="0.5" Grid.Row="1" Grid.Column="1" >
-                    <Button Text="ABOUT US" Clicked="onbar_Clicked" HorizontalOptions="Center" VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" TextColor="White" FontAttributes="Bold" BackgroundColor="Transparent" Opacity="1"/>
-                </Grid>-->
-
-
-        <Image Source="Locationp.jpeg" Grid.Column="0" Grid.Row="2"/>
-        <BoxView Grid.Column="0" Grid.Row="2" Color="Black" Opacity="0.4"/>
-        <Button Grid.Column="0" Grid.Row="2" TextColor="White"  Text="LOCATIONS" Clicked="Vedio_btn_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
-                
-                
-        <!--<Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" Source="Locationp.jpeg"  Grid.Row="2" Grid.Column="0"/>
-                <Grid AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="#000000" Opacity="0.5"  Grid.Row="2" Grid.Column="0" >
-                    <Button Text="LOCATIONS" Clicked="Vedio_btn_Clicked" HorizontalOptions="Center" VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" TextColor="White" FontAttributes="Bold" BackgroundColor="Transparent" Opacity="1"/>
-                </Grid>-->
-
-        <Image Source="Exitap.jpeg" Grid.Column="1" Grid.Row="2"/>
-        <BoxView Grid.Column="1" Grid.Row="2" Color="Black" Opacity="0.4"/>
-        <Button Grid.Column="1" Grid.Row="2" TextColor="White"  Text="EXIT" Clicked="Exit_btn_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
-
-        <!--<Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" Source="Exitap.jpeg"  Grid.Row="2" Grid.Column="1"/>
-                <Grid AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" BackgroundColor="#000000" Opacity="0.5"  Grid.Row="2" Grid.Column="1" >
-                    <Button Text="EXIT" x:Name="exitnow" Clicked="Exit_btn_Clicked" HorizontalOptions="Center" VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" TextColor="White" FontAttributes="Bold" BackgroundColor="Transparent" Opacity="1"/>
-                </Grid>-->
+             <Image Source="teaAbout.jpeg" Grid.Column="1" Grid.Row="1"/>
+            <BoxView Grid.Column="1" Grid.Row="1" Color="Black" Opacity="0.6"/>
+            <Button Grid.Column="1" Grid.Row="1" TextColor="White"  Text="ABOUT US" Clicked="onbar_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>         
+           
+            <Image Source="Locationp.jpeg" Grid.Column="0" Grid.Row="2"/>
+            <BoxView Grid.Column="0" Grid.Row="2" Color="Black" Opacity="0.6"/>
+            <Button Grid.Column="0" Grid.Row="2" TextColor="White"  Text="LOCATIONS" Clicked="Vedio_btn_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
+                              
+            <Image Source="Exitap.jpeg" Grid.Column="1" Grid.Row="2"/>
+            <BoxView Grid.Column="1" Grid.Row="2" Color="Black" Opacity="0.6"/>
+            <Button Grid.Column="1" Grid.Row="2" TextColor="White"  Text="EXIT" Clicked="Exit_btn_Clicked"  HorizontalOptions="Center"  VerticalOptions="Center" FontSize="42" FontFamily="ubuntu" FontAttributes="Bold" BackgroundColor="Transparent"/>
+    
             </Grid>
        
 </ContentPage>
